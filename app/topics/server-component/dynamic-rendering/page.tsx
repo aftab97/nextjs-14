@@ -8,16 +8,17 @@ export const dynamic = "force-dynamic";
 // export const revalidate = 0
 
 async function ProuductQuantity() {
+  "use server"
   // unstable_noStore();
 
   // does not cache because  fetch comes after cookies() or headers()
   //   cookies();
 
-  // let res = await fetch("https://api.vercel.app/products/2", {
-  //   // next: { revalidate: 0 },
-  //   // cache: "no-store",
-  // });
-  // let data = await res.json();
+  let res = await fetch("https://api.vercel.app/products/2", {
+    // next: { revalidate: 0 },
+    // cache: "no-store",
+  });
+  let data = await res.json();
 
   return <h1>test</h1>;
 }
