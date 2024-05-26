@@ -16,7 +16,7 @@ Rendering occurs at build time (when you deply) or during revalidation. This can
 - Reduced Server Load - not generate on each server request
 - SEO - content is prerendered
 
-# Dynamic Function
+## Dynamic Function ##
 Function which rely on information that can be known at request time such as user's cookies, req headers, URL's search params
 
 These functions are:
